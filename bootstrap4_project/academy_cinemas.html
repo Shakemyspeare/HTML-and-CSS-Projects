@@ -93,7 +93,14 @@
                           <img src="./Img/kongskullisland.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h4 class="card-title">Kong: Skull Island</h4>
-                            <p class="card-text">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.</p><br>
+                            <p>
+                              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Click here for more details...
+                              </a>
+                              <div class="collapse" id="collapseExample">A team of scientists explore an uncharted island in the Pacific, venturing into the domain of the mighty Kong, and must fight to escape a primal Eden.</div>
+                              </button>
+                            </p>
+                            <br>
                             <span class="badge badge-pill badge-info">12:00pm</span>
                             <span class="badge badge-pill badge-info">1:30pm</span>
                             <span class="badge badge-pill badge-info">3:00pm</span>
@@ -107,7 +114,14 @@
                           <img src="./Img/ghostintheshell.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h4 class="card-title">Ghost in the Shell</h4>
-                            <p class="card-text">In the near future, Major Mila Killian is the first of her kind: a human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.</p>
+                            <p>
+                              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Click here for more details...
+                              </a>
+                              <div class="collapse" id="collapseExample">In the near future, Major Mila Killian is the first of her kind: a human saved from a terrible crash, who is cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals.</div>
+                              </button>
+                            </p>
+                            <p class="card-text"></p>
                             <span class="badge badge-pill badge-info">12:00pm</span>
                             <span class="badge badge-pill badge-info">1:30pm</span>
                             <span class="badge badge-pill badge-info">3:00pm</span>
@@ -120,8 +134,15 @@
                         <div class="card" style="width: 18rem;">
                           <img src="./Img/beautyandthebeast.jpg" class="card-img-top" alt="...">
                           <div class="card-body">
-                            <h4 class="card-title">Beauy and the Beast</h4>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            <h4 class="card-title">Beauty and the Beast</h4>
+                            <p>
+                              <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                Click here for more details...
+                              </a>
+                              <div class="collapse" id="collapseExample">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</div>
+                              </button>
+                            </p>
+                            <p class="card-text"></p>
                             <span class="badge badge-pill badge-info">12:00pm</span>
                             <span class="badge badge-pill badge-info">1:30pm</span>
                             <span class="badge badge-pill badge-info">3:00pm</span>
@@ -135,6 +156,20 @@
                    
             </div>
             <!--END SHOWTIMES-->
+
+          <!--JUMBOTRON HEADING-->
+          <div id="about" class="jumbotron jumbotron-fluid bg-info text-center">
+            <div class="container">
+              <h1 class="display-4 hiddin-sm-down" style="color: #fff;font-family: roboto;font-weight: 900;text-transform: uppercase; ">Movie Deals</h1>
+              <p class="lead">Check out our monthly deals...</p>
+              <!--BEGIN MOVIE DEALS-->
+              <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#register">See our monthly movie deals!</button>
+              <!--END MOVIE DEALS-->
+            </div>
+          </div>
+          <!--END JUMBOTRON HEADING-->
+          
+
           
           <!--BEGIN EMAIL FORM-->
           <div id="deals" class="text-center">
@@ -143,9 +178,49 @@
                     <div class="form-group">
                         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="button" class="btn btn-secondary btn-info popover-dismiss" data-container="body" data-toggle="popover" data-placement="top" data-content="Submit your email to receive great movie rewards!">
+                      Sign Up!
+                    </button>
                 </form>
           </div>
+
+          <!--BEGIN FORM MODAL-->
+          <div class="modal" tabindex="-1" id="register">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Register to receive movie deals...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+
+                  <div class="form-group">
+                    <label for="firstname">First Name:</label>
+                    <input type="text" class="form-control" id="firstname" placeholder="First Name...">
+                  </div>
+                  <div class="form-group">
+                    <label for="lastname">Last Name:</label>
+                    <input type="text" class="form-control" id="lastname" placeholder="Last Name...">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email...">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="text" class="form-control" id="password" placeholder="Password...">
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--END FORM MODAL-->
 
           <div class="container my-5">
               <ul class="nav nav-inline">
@@ -172,5 +247,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+        $('.popover-dismiss').popover({
+          trigger: 'focus'
+        })
+    </script>
   </body>
 </html>
